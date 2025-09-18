@@ -1,0 +1,48 @@
+package arraysolutions.java;
+
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the First Number: ");
+		int num1=sc.nextInt();
+		sc.nextLine();
+		System.out.print("Enter the Second Number: ");
+		int num2=sc.nextInt();
+		sc.nextLine();
+		System.out.print("Enter the operation you want to perform: ");
+		String Operation=sc.nextLine();
+		int result=0;
+		
+		
+		//ADDITION
+		if(Operation.equals("+")) {
+			result=num1+num2;
+			System.out.println(result);
+		}
+		//SUBTRACTION
+		if(Operation.equals("-")) {
+			result=num1-num2;
+			System.out.println(result);
+		}
+		//MULTIPLICATION
+		if(Operation.equals("*")) {
+			result=num1*num2;
+			System.out.println(result);
+		}
+		//DIVISION
+		if(Operation.equals("/")) {
+			result=num1/num2;
+			System.out.println(result);
+		}
+		//MODULUS
+		if(Operation.equals("%")) {
+			result=num1%num2;
+			System.out.println(result);
+		}
+		sc.close();
+	}
+
+}
